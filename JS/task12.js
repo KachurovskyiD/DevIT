@@ -9,7 +9,7 @@ function array_combine(arr1, arr2) {
   let newObj = {};
 
   for (let i = 0; i < arr1.length; i++) {
-    if (typeof arr1[i] !== "boolean") {
+    if (typeof arr1[i] !== "boolean" && typeof arr1[i] !== "object") {
       for (let j = 0; j < arr2.length; j++) {
         newObj[`${arr1[i]}`] = arr2[i];
       }
