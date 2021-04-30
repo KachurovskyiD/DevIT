@@ -1,0 +1,8 @@
+GIT внесение изменений
+
+git clone git@github.com:example/test.git #Клонируем существующий репозиторий через SSH ключ
+git checkout dev #Переключаемся на ветку dev
+echo "### May be in future" >> README.md #Добавил файл Readme.md с текстом ### May be in future
+git add README.md #Добавляем файл README.md в отслеживаемые(индекс)
+git commit -m "Added README.md" #Коммитим наши изменения
+git push -u origin dev #Пушим изменения в удаленный репозиторий

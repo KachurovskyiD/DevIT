@@ -1,0 +1,43 @@
+Опишите все известные вам способы позиционирования 5 элементов по центру, каждый из которых должен занимать 20%.
+
+1) Позиционирование с помощью Flexbox
+
+Flex-контейнеру задаем свойства: 
+display: flex;
+align-items: center;
+
+Flex-елементам задаем свойство:
+flex: 1 1 20%;
+
+2) Позиционирование с помощью Grid
+
+Grid-контейнеру задаем свойства: 
+display: grid;
+grid-template-columns: repeat(5, 20%);
+align-items: center;
+
+3) Позиционирование с помощью inline-block
+
+Контейнеру задаем свойства:
+height: 100%;
+font-size: 0;
+
+Елементам задаем свойство:
+display: inline-block;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+width: 20%;
+
+4) Позиционирование с помощью Float
+
+Контейнеру задаем свойства:
+height: 100%;
+
+Елементам задаем свойство:
+display: block;
+position: relative;
+float: right;
+top: 50%;
+transform: translateY(-50%);
+width: 20%;

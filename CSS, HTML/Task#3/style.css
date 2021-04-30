@@ -1,0 +1,36 @@
+body {
+  height: 100vh;
+  font-size: 16px;
+}
+
+.buttons {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons__btn {
+  cursor: pointer;
+  margin: 0 20px;
+  border: 1px solid rgb(214, 214, 214);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgb(116, 194, 246);
+  color: #fff;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.20);
+}
+
+.buttons__btn--active {
+  background-color: #56A956;
+}
+
+.buttons__btn--disabled {
+  background-color: #FAFAFA;
+  color: #B0B0BB;
+}
+
+.buttons__btn--danger {
+  background-color: #C43C35;
+}
